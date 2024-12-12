@@ -1,0 +1,112 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String         @id @default(uuid())
+  email         String         @unique
+  password      String
+  name          String
+  image         String?
+  phone         String?
+  streetAddress String?
+  postalCode    String?
+  city          String?
+  country       String?
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  orders        OrderProduct[]
+}
+
+model Product {
+  id          String         @id @default(cuid())
+  name        String
+  description String
+  image       String
+  order       Int
+  basePrice   Float
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+  sizes       Size[]
+  extras      Extra[]
+  orders      OrderProduct[]
+  category    Category       @relation(fields: [categoryId], references: [id])
+  categoryId  String
+}
+
+model Size {
+  id        String       @id @default(cuid())
+  name      ProductSizes
+  price     Float
+  product   Product      @relation(fields: [productId], references: [id])
+  productId String
+}
+
+model Extra {
+  id        String           @id @default(cuid())
+  name      ExtraIngredients
+  price     Float
+  product   Product          @relation(fields: [productId], references: [id])
+  productId String
+}
+
+model Category {
+  id       String    @id @default(uuid())
+  name     String
+  order    Int       @default(autoincrement())
+  products Product[]
+}
+
+model Order {
+  id            String         @id @default(uuid())
+  paid          Boolean        @default(false)
+  subTotal      Float
+  deliveryFee   Float
+  totalPrice    Float
+  userEmail     String
+  phone         String
+  streetAddress String
+  postalCode    String
+  city          String
+  country       String
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  products      OrderProduct[]
+}
+
+model OrderProduct {
+  id       String @id @default(cuid())
+  quantity Int
+
+  order     Order   @relation(fields: [orderId], references: [id])
+  orderId   String
+  user      User?   @relation(fields: [userId], references: [id])
+  userId    String?
+  product   Product @relation(fields: [productId], references: [id])
+  productId String
+}
+
+enum ProductSizes {
+  SMALL
+  MEDIUM
+  LARGE
+}
+
+enum ExtraIngredients {
+  CHEESE
+  BACON
+  TOMATO
+  ONION
+  PEPPER
+}
