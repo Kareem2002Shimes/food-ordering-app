@@ -30,11 +30,213 @@
     "about": "معلومات عنا",
     "menu": "القائمة",
     "contact": "تواصل معنا",
-    "login": "تسجيل الدخول"
+    "login": "تسجيل الدخول",
+    "register": "انشاء حساب",
+    "signOut": "تسجيل الخروج",
+    "profile": "الملف الشخصي",
+    "admin": "المسؤول"
+  },
+  "auth": {
+    "login": {
+      "title": "مرحبًا بعودتك",
+      "name": {
+        "label": "الاسم",
+        "placeholder": "أدخل اسمك"
+      },
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "أدخل بريدك الإلكتروني"
+      },
+      "password": {
+        "label": "كلمة المرور",
+        "placeholder": "أدخل كلمة المرور"
+      },
+      "submit": "تسجيل الدخول",
+      "authPrompt": {
+        "message": "ليس لديك حساب؟ ",
+        "signUpLinkText": "سجل الآن"
+      }
+    },
+    "register": {
+      "title": "إنشاء حساب",
+      "name": {
+        "label": "الاسم",
+        "placeholder": "أدخل اسمك"
+      },
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "أدخل بريدك الإلكتروني"
+      },
+      "password": {
+        "label": "كلمة المرور",
+        "placeholder": "أدخل كلمة المرور"
+      },
+      "confirmPassword": {
+        "label": "تأكيد كلمة المرور",
+        "placeholder": "أعد إدخال كلمة المرور"
+      },
+      "submit": "إنشاء حساب",
+      "authPrompt": {
+        "message": "هل لديك حساب؟ ",
+        "loginLinkText": "تسجيل الدخول"
+      }
+    }
+  },
+  "validation": {
+    "nameRequired": "الاسم مطلوب",
+    "validEmail": "يجب أن يكون بريد إلكتروني صالح",
+    "passwordMinLength": "يجب أن تكون كلمة المرور على الأقل 6 أحرف",
+    "passwordMaxLength": "يجب أن تكون كلمة المرور على الأكثر 40 حرفًا",
+    "confirmPasswordRequired": "تأكيد كلمة المرور مطلوب",
+    "passwordMismatch": "كلمة المرور غير متطابقة"
+  },
+  "messages": {
+    "userNotFound": "المستخدم غير موجود",
+    "incorrectPassword": "كلمة المرور غير صحيحة",
+    "loginSuccessful": "تم تسجيل الدخول بنجاح",
+    "unexpectedError": "حدث خطأ غير متوقع",
+    "userAlreadyExists": "المستخدم موجود بالفعل",
+    "accountCreated": "تم إنشاء الحساب بنجاح",
+    "updateProfileSucess": "تم تحديث الملف الشخصي بنجاح",
+    "categoryAdded": "تم اضافة الفئة بنجاح",
+    "updatecategorySucess": "تم تحديث الفئة بنجاح",
+    "deleteCategorySucess": "تم حذف الفئة بنجاح",
+    "productAdded": "تم اضافة المنتج بنجاح",
+    "updateProductSucess": "تم تحديث المنتج بنجاح",
+    "deleteProductSucess": "تم حذف المنتج بنجاح",
+    "updateUserSucess": "تم تحديث المستخدم بنجاح",
+    "deleteUserSucess": "تم حذف المستخدم بنجاح"
   },
   "menuItem": {
     "addToCart": "أضف الي العربة"
   },
+  "profile": {
+    "title": "الملف الشخصي",
+    "form": {
+      "name": {
+        "label": "الاسم",
+        "placeholder": "أدخل اسمك"
+      },
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "أدخل بريدك الإلكتروني"
+      },
+      "phone": {
+        "label": "الهاتف",
+        "placeholder": "أدخل رقم هاتفك",
+        "validation": {
+          "required": "رقم الهاتف مطلوب",
+          "invalid": "يرجى إدخال رقم هاتف صالح"
+        }
+      },
+      "address": {
+        "label": "العنوان",
+        "placeholder": "أدخل عنوانك",
+        "validation": {
+          "required": "العنوان مطلوب"
+        }
+      },
+      "postalCode": {
+        "label": "الرمز البريدي",
+        "placeholder": "أدخل الرمز البريدي",
+        "validation": {
+          "required": "الرمز البريدي مطلوب",
+          "invalid": "يرجى إدخال رمز بريدي صالح"
+        }
+      },
+      "city": {
+        "label": "المدينة",
+        "placeholder": "أدخل مدينتك",
+        "validation": {
+          "required": "المدينة مطلوبة"
+        }
+      },
+      "country": {
+        "label": "الدولة",
+        "placeholder": "أدخل دولتك",
+        "validation": {
+          "required": "الدولة مطلوبة"
+        }
+      }
+    }
+  },
+  "admin": {
+    "tabs": {
+      "profile": "الملف الشخصي",
+      "categories": "الفئات",
+      "menuItems": "عناصر القائمة",
+      "users": "المستخدمون",
+      "orders": "الطلبات"
+    },
+    "categories": {
+      "form": {
+        "editName": "تعديل اسم الفئة",
+        "name": {
+          "label": "اسم الفئة",
+          "placeholder": "أدخل اسم الفئة",
+          "validation": {
+            "required": "اسم الفئة مطلوب"
+          }
+        }
+      }
+    },
+    "menu-items": {
+      "createNewMenuItem": "إنشاء عنصر قائمة جديد",
+      "addItemSize": "إضافة حجم العنصر",
+      "addExtraItem": "إضافة عنصر إضافي",
+      "menuOption": {
+        "name": "الاسم",
+        "extraPrice": "السعر الاضافي"
+      },
+      "form": {
+        "name": {
+          "label": "اسم العنصر",
+          "placeholder": "أدخل اسم العنصر",
+          "validation": {
+            "required": "اسم العنصر مطلوب"
+          }
+        },
+        "description": {
+          "label": "اسم الوصف",
+          "placeholder": "أدخل اسم الوصف",
+          "validation": {
+            "required": "اسم الوصف مطلوب"
+          }
+        },
+        "basePrice": {
+          "label": "السعر الأساسي",
+          "placeholder": "أدخل السعر الأساسي",
+          "validation": {
+            "required": "السعر الأساسي مطلوب"
+          }
+        },
+        "category": {
+          "validation": {
+            "required": "اختيار الفئة مطلوب"
+          }
+        },
+        "image": {
+          "validation": {
+            "required": "صورة المنتج مطلوبة"
+          }
+        }
+      }
+    }
+  },
+  "category": "الفئة",
+  "save": "حفظ",
+  "edit": "تعديل",
+  "delete": "حذف",
+  "create": "انشاء",
+  "sizes": "الأحجام",
+  "extrasIngredients": "عناصر اضافية",
+  "cancel": "الغاء",
+  "cart": {
+    "title": "عربة التسوق",
+    "noItemsInCart": "لا توجد عناصر في سلة التسوق الخاصة بك. أضف بعضًا"
+  },
+
   "copyRight": "© 2024 جميع الحقوق محفوظة",
-  "noProductsFound": "لم يتم العثور على منتجات"
+  "noProductsFound": "لم يتم العثور على منتجات",
+  "noCategoriesFound": "لم يتم العثور على الفئات"
 }

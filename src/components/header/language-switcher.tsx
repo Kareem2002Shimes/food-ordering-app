@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useParams, usePathname, useRouter } from 'next/navigation';
-import { Button } from '../ui/button';
-import { Languages } from '@/constants/enums';
+import { useParams, usePathname, useRouter } from "next/navigation";
+import { Button } from "../ui/button";
+import { Languages } from "@/constants/enums";
 
 const LanguageSwitcher = () => {
   const router = useRouter();
@@ -16,17 +16,17 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className='flex mx-4'>
+    <div className="flex">
       {locale === Languages.ARABIC ? (
         <Button
-          variant='outline'
+          variant="outline"
           onClick={() => switchLanguage(Languages.ENGLISH)}
         >
           English
         </Button>
       ) : (
         <Button
-          variant='outline'
+          variant="outline"
           onClick={() => switchLanguage(Languages.ARABIC)}
         >
           العربية

@@ -30,11 +30,212 @@
     "about": "About",
     "menu": "Menu",
     "contact": "Contact",
-    "login": "Login"
+    "login": "Login",
+    "register": "Register",
+    "signOut": "Sign Out",
+    "profile": "Profile",
+    "admin": "Admin"
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter your password"
+      },
+      "submit": "Login",
+      "authPrompt": {
+        "message": "Don't have an account? ",
+        "signUpLinkText": "Sign Up"
+      }
+    },
+    "register": {
+      "title": "Register",
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter your password"
+      },
+      "confirmPassword": {
+        "label": "Confirm Password",
+        "placeholder": "Re-enter your password"
+      },
+      "submit": "Register",
+      "authPrompt": {
+        "message": "Already have an account? ",
+        "loginLinkText": "Login"
+      }
+    }
+  },
+  "validation": {
+    "nameRequired": "Name is required",
+    "validEmail": "Must be a valid email",
+    "passwordMinLength": "Password must be at least 6 characters",
+    "passwordMaxLength": "Password must be at most 40 characters",
+    "confirmPasswordRequired": "Confirm Password is required",
+    "passwordMismatch": "Password do not match"
+  },
+  "messages": {
+    "userNotFound": "User not found",
+    "incorrectPassword": "Incorrect password",
+    "loginSuccessful": "Login successful",
+    "unexpectedError": "An unexpected error occurred",
+    "userAlreadyExists": "User already exists.",
+    "accountCreated": "Account created successfully",
+    "updateProfileSucess": "Profile updated successfull",
+    "categoryAdded": "Category added successfully",
+    "updatecategorySucess": "Category updated successfull",
+    "deleteCategorySucess": "Category deleted successfull",
+    "productAdded": "Product added successfully",
+    "updateProductSucess": "Product updated successfull",
+    "deleteProductSucess": "Product deleted successfull",
+    "updateUserSucess": "User updated successfull",
+    "deleteUserSucess": "User deleted successfull"
   },
   "menuItem": {
     "addToCart": "Add to cart"
   },
+  "profile": {
+    "title": "Profile",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "Enter your phone number",
+        "validation": {
+          "required": "Phone number is required",
+          "invalid": "Please enter a valid phone number"
+        }
+      },
+      "address": {
+        "label": "Street Address",
+        "placeholder": "Enter your address",
+        "validation": {
+          "required": "Address is required"
+        }
+      },
+      "postalCode": {
+        "label": "Postal Code",
+        "placeholder": "Enter your postal code",
+        "validation": {
+          "required": "Postal code is required",
+          "invalid": "Please enter a valid postal code"
+        }
+      },
+      "city": {
+        "label": "City",
+        "placeholder": "Enter your city",
+        "validation": {
+          "required": "City is required"
+        }
+      },
+      "country": {
+        "label": "Country",
+        "placeholder": "Enter your country",
+        "validation": {
+          "required": "Country is required"
+        }
+      }
+    }
+  },
+  "admin": {
+    "tabs": {
+      "profile": "Profile",
+      "categories": "Categories",
+      "menuItems": "Menu Items",
+      "users": "Users",
+      "orders": "Orders"
+    },
+    "categories": {
+      "form": {
+        "editName": "Change Category Name",
+        "name": {
+          "label": "Category Name",
+          "placeholder": "Enter category name",
+          "validation": {
+            "required": "Category Name is required"
+          }
+        }
+      }
+    },
+    "menu-items": {
+      "createNewMenuItem": "Create new menu item",
+      "addItemSize": "Add item size",
+      "addExtraItem": "Add extra item",
+      "menuOption": {
+        "name": "Name",
+        "extraPrice": "Extra Price"
+      },
+      "form": {
+        "name": {
+          "label": "Item Name",
+          "placeholder": "Enter item name",
+          "validation": {
+            "required": "Item Name is required"
+          }
+        },
+        "description": {
+          "label": "Description Name",
+          "placeholder": "Enter description name",
+          "validation": {
+            "required": "description Name is required"
+          }
+        },
+        "basePrice": {
+          "label": "Base Price",
+          "placeholder": "Enter base price",
+          "validation": {
+            "required": "Base Price is required"
+          }
+        },
+        "category": {
+          "validation": {
+            "required": "Category is required"
+          }
+        },
+        "image": {
+          "validation": {
+            "required": "Product image is required"
+          }
+        }
+      }
+    }
+  },
+  "category": "Category",
+  "save": "Save",
+  "edit": "Edit",
+  "delete": "Delete",
+  "cancel": "Cancel",
+  "sizes": "Sizes",
+  "extrasIngredients": "Extras Ingredients",
+  "create": "Create",
+  "cart": {
+    "title": "Shopping Cart",
+    "noItemsInCart": "There are no items in your cart. Add some"
+  },
   "copyRight": "© 2024 All rights reserved",
-  "noProductsFound": "No products found"
+  "noProductsFound": "No products found",
+  "noCategoriesFound": "No categories found"
 }
